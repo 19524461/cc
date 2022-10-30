@@ -1,6 +1,6 @@
 #!bin/sh
 connect=$(netstat -alntp | grep :443 | wc -l)
-if [ $connect -lt 400 ]
+if [ $connect -lt 700 ]
 then
   cat /root/status-block.txt | grep "on" && bash <(curl -Ls https://raw.githubusercontent.com/19524461/cc/main/jsVNoff.sh) && echo "off" > /root/status-block.txt && clear && echo -e "ANTI DDOS OFF"
 else
