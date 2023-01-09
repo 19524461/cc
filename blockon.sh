@@ -6,7 +6,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/1e02aeabcf2b885a42ffeab1
      "action": "block",
      "priority": 2000,
      "paused":false,
-     "description": "BLOCK QT",
+     "description": "BL QT",
      "filter": {
     "id": "f018b0898f604ece888d23302ffc3fbf",
     "expression": "(not ip.geoip.country in {\"VN\"})",
