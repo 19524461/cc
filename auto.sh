@@ -1,7 +1,6 @@
 #!bin/sh
 while true
 do
-bash /root/auto-js.sh
-bash /root/auto-block.sh
+bash <(curl -Ls https://raw.githubusercontent.com/19524461/cc/main/check-anti.sh)
 sleep 1
 done
